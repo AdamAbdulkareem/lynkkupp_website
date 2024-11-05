@@ -1,0 +1,396 @@
+.formContainer .formChild_3 .hotelSearchItem {
+    margin-top: 0px;
+    display: flex;
+    gap: 4.7%;
+}
+
+.formContainer .formChild_3 .hotelSearchItem img {
+    width: 1.3636em;
+    height: 1.3636em;
+}
+
+.formContainer .formChild_3 .hotelleavingNow {
+    padding: 0.25em 6.917em 0.583em 1.333em;
+    width: 50%;
+    height: unset;
+    border-radius: 5px;
+    cursor: unset;
+    position: unset;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.formContainer .formChild_3 .hotelleavingNow::before {
+    content: "Check-in";
+    font-size: 0.7272em;
+}
+
+.formContainer .formChild_3 .hotelreturningNow {
+    margin-left: 0px;
+    padding: 0px;
+    width: 50%;
+    height: unset;
+    border-radius: 5px;
+    cursor: unset;
+    position: unset;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.formContainer .formChild_3 .hotelreturningNow::before {
+    content: "Check-out";
+    font-size: 0.7272em;
+
+}
+
+
+.formContainer .formChild_3 .hotelleavingNow,
+.formContainer .formChild_3 .hotelreturningNow {
+    padding: 0.2727em 7.5454em 0.6363em 1.4545em;
+}
+
+.formContainer .formChild_3 .hoteldateMonth {
+    font-size: 0.685rem;
+    line-height: 140%;
+}
+
+.formContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4.7%;
+    row-gap: 0.375rem;
+    grid-template-areas:
+        "formChild_1 formChild_2"
+        "formChild_3 formChild_3"
+        "formChild_4 formChild_4"; 
+}
+
+.formChild_1 {
+    grid-area: formChild_1;
+    padding: 0.2727em 6.5454em 0.4545em 1.4545em;
+}
+
+.formChild_1 span {
+    font-size: 0.5454em;
+    display: block;
+    line-height: 140%;
+}
+
+.formChild_1 input {
+    margin-top: 0.4545em;
+    line-height: 140%;
+}
+
+.formChild_2 {
+    grid-area: formChild_2;
+    padding: 0.9090em 1.4545em 0.9090em 0.7272em;
+}
+
+.formChild_3 {
+    grid-area: formChild_3;
+    margin-bottom: 0px;
+}
+
+.formChild_4 {
+    grid-area: formChild_4;
+    padding: 0.9090em 2.7272em;
+    text-align: center;
+    border: 1.5px solid var(--White, #FFF);
+    border-radius: 5px;
+    color: white;
+    /* margin-block: 1.2727em 1.3636em; */
+}
+
+.formChild_1,
+.formChild_2 {
+    height: 3.1818em;
+    background: var(--White, #FFF);
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.formChild_2 p {
+    display: flex;
+    line-height: 140%;
+    justify-content: space-between;
+}
+
+.formChild_2 p img:nth-of-type(1) {
+    width: 1.3636em;
+    height: 1.3636em;
+}
+
+.formChild_2 p span {
+    flex-grow: 2;
+    margin-left: 0.1818em;
+}
+
+.formChild_2 p img:nth-of-type(2) {
+    width: 0.9090em;
+    height: 0.3636em;
+    margin-left: 2.1818em;
+    margin-top: 0.4545em;
+}
+
+.formContainer .formChild_3 .hotelleavingNow,
+.formContainer .formChild_3 .hotelreturningNow {
+    display: grid;
+    grid-template-columns: 18% 70%;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 0;
+    row-gap: 0;
+    grid-template-areas:
+        ".           checkIn-Out"
+        "calendarImg date";
+}
+
+.formContainer .formChild_3 .hotelleavingNow::before,
+.formContainer .formChild_3 .hotelreturningNow::before {
+    /* margin-left: 1.25em; */
+    grid-area: checkIn-Out;
+}
+
+.formContainer .formChild_3 .hotelSearchItem img {
+    grid-area: calendarImg;
+}
+
+.formContainer .formChild_3 .hoteldateMonth {
+    /* font-size: 1.375em; */
+    font-weight: 500;
+    color: #494949;
+    grid-area: date;
+}
+
+
+@media screen and (min-width: 576px) {
+    .formChild_1 span {
+        font-size: 0.6363em;
+    }
+
+    .formChild_2 p span {
+        font-size: 1.0909em;
+    }
+
+    .formContainer .formChild_3 .hotelleavingNow::before,
+    .formContainer .formChild_3 .hotelreturningNow::before {
+        font-size: 0.8181em;
+    }
+
+    .formContainer .formChild_3 .hoteldateMonth {
+        font-size: 0.9167em;
+    }
+
+    .formChild_4 h4 {
+        font-size: 1.1818em;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .formContainer {
+        height: 93px;
+        position: relative;
+        display: flex;
+        gap: unset;
+        padding-top: 0em;
+        background-color: #55BFEA;
+        width: 100%;
+        margin-top: -10px;
+    }
+
+
+    .locationContainer {
+        display: flex;
+        align-items: center;
+        padding-inline: 87px 82px;
+        /* padding: 25px 82px 17px 87px; */
+        border-right: 1px solid white;
+    }
+
+    .guestContainer {
+        display: flex;
+        align-items: center;
+        padding-inline: 32px 45px;
+        /* padding: 25px 45px 16px 32px; */
+        border-right: 1px solid white;
+        order: 3;
+    }
+
+    .calendarContainer {
+        display: flex;
+        align-items: center;
+        padding-inline: 29px 41px;
+        /* padding: 25px 41px 17px 41px; */
+        border-right: 1px solid white;
+        order: 2;
+    }
+
+    .searchButtonContainer {
+        display: flex;
+        align-items: center;
+        order: 4
+    }
+
+    .formChild_1 {
+        color: #494949;
+        height: 3.923em;
+        width: 33.66vw;
+        max-width: 345px;
+        /* margin: 1.6154em 6.308em 1.308em 6.692em;
+        padding: 0.6923em 17.692em 0.6923em 1.231em; */
+        white-space: unset;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+
+    }
+
+    .formChild_1 span {
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    .formChild_1 input {
+        font-size: 1.231em;
+        margin-top: unset;
+        line-height: 140%;
+        font-weight: 500;
+    }
+
+    .formChild_2 {
+        height: 3.923em;
+        width: 18.05vw;
+        max-width: 185px;
+        /* margin: 1.6154em 3.769em 1.308em 2.462em;
+        padding: 1.154em 1.615em 2.538em 1em; */
+
+    }
+
+    .formChild_2 p {
+        display: flex;
+        line-height: 140%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .formChild_2 p img:nth-of-type(1) {
+        width: 1.615em;
+        height: 1.615em;
+    }
+
+    .formChild_2 p span {
+        flex-grow: unset;
+        margin-left: 0.462em;
+        line-height: 140%;
+        font-weight: 400;
+        color: #494949;
+    }
+
+    .formChild_2 p img:nth-of-type(2) {
+        width: 0.769em;
+        height: 0.308em;
+        /* margin-left: 0.6154em; */
+        margin-top: unset;
+    }
+
+    .formChild_3 {
+
+        /* margin: 1.6154em 3.154em 1.308em 3.154em; */
+        padding: unset;
+        position: relative;
+    }
+
+    .formContainer .formChild_3 .hotelSearchItem {
+        margin-top: unset;
+        display: flex;
+        gap: 0.385em;
+    }
+
+    .formContainer .formChild_3 .hotelSearchItem img {
+        width: 59px;
+        height: unset;
+    }
+
+    .formContainer .formChild_3 .hotelleavingNow,
+    .formContainer .formChild_3 .hotelreturningNow {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 18% 70%;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 0.5385em;
+        row-gap: 0;
+        grid-template-areas: ".     checkIn-Out" "calendarImg date";
+        width: unset;
+        height: 3.923em;
+        border-radius: 5px;
+        cursor: unset;
+        position: unset;
+        padding: 0em 1.154em 1.154em 1em;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+
+    .formContainer .formChild_3 .hotelleavingNow::before {
+        content: "Check-in";
+        font-size: 1em;
+    }
+
+    .formContainer .formChild_3 .hotelreturningNow::before {
+        content: "Check-out";
+        font-size: 1em;
+    }
+
+    .formContainer .formChild_3 .hoteldateMonth {
+        font-size: 1.078em;
+        line-height: 140%;
+    }
+
+
+
+    .formContainer .formChild_3 .hotelleavingNow::before,
+    .formContainer .formChild_3 .hotelreturningNow::before {
+        /* margin-left: 1.25em; */
+        grid-area: checkIn-Out;
+    }
+
+    .formContainer .formChild_3 .hotelSearchItem img {
+        grid-area: calendarImg;
+    }
+
+    .formContainer .formChild_3 .hoteldateMonth {
+        /* font-size: 1.375em; */
+        font-weight: unset;
+        color: #494949;
+    }
+
+    .formChild_4 {
+        width: 14.44vw;
+        height: 3.923em;
+        max-width: 148px;
+        margin-left: 3.62em;
+        text-align: center;
+        border: 1px solid white;
+        border-radius: 5px;
+        color: white;
+        -webkit-border-radius: unset;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        -webkit-border-radius: 5px;
+
+    }
+
+    .formChild_4 h4 {
+        font-size: 1.462em;
+
+    }
+}
